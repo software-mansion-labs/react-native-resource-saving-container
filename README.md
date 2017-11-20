@@ -11,8 +11,14 @@ This property allows for components rendered in javascript to be instantiated in
 
 ### How to use it
 
-Use `<ResourceSavingContainer/>` as a container in which you want to put resource intensive components (e.g. images, or even whole screens from navigation stack). When your components are not expected to be visible (e.g. they have been covered by other navigation card) set `visible={false}` to detach all children from native view hierarchy:
+Use `<ResourceSavingContainer/>` as a container in which you want to put resource intensive components (e.g. images, or even whole screens from navigation stack). When your components are not expected to be visible (e.g. they have been covered by other navigation card) set `visible={false}` to detach all children from native view hierarchy.
 
+First import `<ResourceSavingContainer/>` component like this:
+```js
+import ResourceSavingContainer from 'react-native-resource-saving-container';
+```
+
+Then use it in your render method:
 ```js
     <ResourceSavingContainer
         style={{ backgroundColor: '#fcfcfc' }}
