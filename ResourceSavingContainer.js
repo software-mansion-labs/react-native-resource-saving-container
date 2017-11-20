@@ -10,12 +10,18 @@ const FAR_FAR_AWAY = 3000; // this should be big enough to move the whole view o
 
 const ResourceSavingContainer = ({ style, visible, children }) => (
   <View style={style} collapsable={false} removeClippedSubviews={true}>
-    <View style={!visible && styles.innerDetached}>{children}</View>
+    <View style={visible ? styles.innerAttached : styles.innerDetached}>
+      {children}
+    </View>
   </View>
 );
 
 const styles = StyleSheet.create({
+  innerAttached: {
+    flex: 1,
+  },
   innerDetached: {
+    flex: 1,
     left: FAR_FAR_AWAY,
   },
 });
