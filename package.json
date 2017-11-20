@@ -1,6 +1,6 @@
 {
   "name": "react-native-resource-saving-container",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":
     "View container that saves resources (bitmaps, camera) by detaching native views when they are not visible",
   "scripts": {
