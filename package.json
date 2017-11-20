@@ -1,0 +1,56 @@
+{
+  "name": "react-native-resource-saving-container",
+  "version": "1.0.0-alpha.1",
+  "description":
+    "View container that saves resources (bitmaps, camera) by detaching native views when they are not visible",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "main": "ResourceSavingContainer.js",
+  "files": ["README.md", "ResourceSavingContainer.js"],
+  "repository": {
+    "type": "git",
+    "url":
+      "git+https://github.com/SoftwareMansion/react-native-resource-saving-container.git"
+  },
+  "author": {
+    "email": "krzys@swmansion.com",
+    "name": "Krzysztof Magiera"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url":
+      "https://github.com/SoftwareMansion/react-native-resource-saving-container/issues"
+  },
+  "homepage":
+    "https://github.com/SoftwareMansion/react-native-resource-saving-container#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "> 15.0.0",
+    "react-native": ">= 0.47.0"
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  },
+  "devDependencies": {
+    "babel-jest": "16.0.0",
+    "babel-preset-react-native": "1.9.0",
+    "husky": "^0.14.3",
+    "jest": "16.0.2",
+    "jest-react-native": "16.0.0",
+    "lint-staged": "^4.0.3",
+    "prettier": "^1.7.0",
+    "react-test-renderer": "15.3.2",
+    "react": "^16.0.0",
+    "react-native": "^0.50.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --print-width 80 --tab-width 2 --single-quote --jsx-bracket-same-line=true --trailing-comma=es5",
+      "git add"
+    ]
+  }
+}
