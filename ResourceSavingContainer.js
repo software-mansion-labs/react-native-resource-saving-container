@@ -8,8 +8,8 @@ import { StyleSheet, View } from 'react-native';
 
 const FAR_FAR_AWAY = 3000; // this should be big enough to move the whole view out of its conatiner
 
-const ResourceSavingContainer = ({ style, visible, children }) => (
-  <View style={style} collapsable={false} removeClippedSubviews={true}>
+const ResourceSavingContainer = ({ visible, children, ...rest }) => (
+  <View {...rest} collapsable={false} removeClippedSubviews={true}>
     <View style={visible ? styles.innerAttached : styles.innerDetached}>
       {children}
     </View>
