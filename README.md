@@ -29,4 +29,4 @@ Use `<ResourceSavingContainer/>` as a container in which you want to put resourc
 
 Try searching over the issues on [GitHub here](https://github.com/SoftwareMansion/react-native-resource-saving-container/issues). If you don't find anything that would help feel free to open a new issue!
 
-You could also just read the source code - it only has a few lines.
+You could also just read the source code - it only has [a few lines](https://github.com/SoftwareMansion/react-native-resource-saving-container/blob/master/ResourceSavingContainer.js).
